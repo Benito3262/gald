@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>GALD · Growth · Video · Community</title>
+<meta name="description" content="Gald (@Just_Gald). Web3 growth strategist, KOL, community manager, and AI video creator. Open for paid work." />
+<meta property="og:image" content="assets/avatar.jpg" />
+<style>
+  :root { --bg:#07110c; --card:#0e1c14; --card2:#13261b; --line:#234832; --gold:#d6b25e; --gold2:#e8f7d8; --text:#f7fff4; --mute:#c9decb; --soft:#7f9a86; }
+  [data-theme="light"] { --bg:#f7fbf4; --card:#fff; --card2:#eef6e6; --line:#d7e8c8; --gold:#3f6b28; --gold2:#2f5a22; --text:#102016; --mute:#3d5746; --soft:#7f9a86; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:Inter,system-ui,sans-serif; background:var(--bg); color:var(--text); line-height:1.55; }
+  .wrap { width:min(1080px, calc(100% - 36px)); margin:0 auto; }
+  a { color:inherit; text-decoration:none; } img { display:block; max-width:100%; }
+  header { position:sticky; top:0; z-index:20; background:color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter:blur(14px); border-bottom:1px solid var(--line); }
+  .nav { display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
+  .logo { letter-spacing:.18em; font-size:12px; color:var(--gold); font-weight:700; }
+  nav { display:flex; gap:18px; align-items:center; font-size:13px; color:var(--mute); }
+  .tog { border:1px solid var(--line); background:transparent; color:var(--mute); border-radius:999px; padding:6px 12px; font-size:11px; letter-spacing:.08em; text-transform:uppercase; cursor:pointer; }
+  .hero { display:grid; grid-template-columns:1.1fr .9fr; gap:48px; align-items:center; padding:72px 0 48px; }
+  .avail { color:var(--gold); font-size:12px; letter-spacing:.16em; text-transform:uppercase; margin-bottom:18px; font-weight:700; }
+  h1 { font-size:clamp(64px, 10vw, 104px); font-weight:800; letter-spacing:-.05em; line-height:.86; margin-bottom:14px; }
+  .sub, .lead, .stat span, .card p, .work p { color:var(--mute); }
+  .sub { margin-bottom:22px; } .sub b { color:var(--gold); }
+  .obj { max-width:540px; border-left:3px solid var(--gold); background:rgba(214,178,94,.1); padding:16px 18px; border-radius:0 12px 12px 0; }
+  .obj small { display:block; color:var(--gold); letter-spacing:.14em; font-size:11px; text-transform:uppercase; margin-bottom:6px; font-weight:700; }
+  .row { display:flex; flex-wrap:wrap; gap:10px; margin-top:26px; }
+  .btn { display:inline-flex; border-radius:999px; padding:11px 18px; font-size:14px; font-weight:600; border:1px solid var(--line); background:var(--card); }
+  .fill { background:#1f6b3a; color:#fff; border-color:#1f6b3a; }
+  .portrait, .stat, .card, .work { background:var(--card); border:1px solid var(--line); border-radius:18px; }
+  .portrait { padding:14px; border-radius:28px; }
+  .portrait img { width:100%; border-radius:20px; aspect-ratio:3/4; object-fit:cover; object-position:top; }
+  .chips { display:flex; flex-wrap:wrap; gap:8px; margin-top:14px; }
+  .chip { font-size:12px; color:var(--gold2); border:1px solid var(--line); border-radius:999px; padding:6px 10px; font-weight:600; }
+  section { padding:28px 0 8px; }
+  .kicker { color:var(--gold); letter-spacing:.14em; font-size:12px; font-weight:700; margin-bottom:8px; }
+  h2 { font-size:clamp(28px, 4vw, 40px); letter-spacing:-.04em; margin-bottom:12px; }
+  .lead { max-width:720px; margin-bottom:18px; }
+  .stats, .grid2, .grid3 { display:grid; gap:12px; }
+  .stats { grid-template-columns:repeat(3,1fr); } .grid2 { grid-template-columns:1fr 1fr; } .grid3 { grid-template-columns:repeat(3,1fr); }
+  .stat, .card, .work { padding:18px; }
+  .stat strong { display:block; font-size:28px; }
+  .work { margin-bottom:12px; }
+  .work a { color:var(--gold); font-weight:600; font-size:13px; display:inline-block; margin-top:12px; }
+  .quote { margin:22px 0; padding:22px; border-radius:18px; background:var(--card2); border:1px solid var(--line); font-size:18px; }
+  .quote small { display:block; margin-top:8px; color:var(--mute); font-size:13px; }
+  .hire { text-align:center; padding:42px 0 64px; }
+  footer { border-top:1px solid var(--line); color:var(--soft); font-size:13px; display:flex; justify-content:space-between; padding:18px 0 28px; }
+  @media (max-width:800px) { .hero, .grid3, .grid2, .stats { grid-template-columns:1fr; } nav a { display:none; } }
+</style>
+</head>
+<body>
+<header><div class="wrap nav"><a class="logo" href="#top">GALD</a><nav><a href="#work">Work</a><a href="#hire">Hire</a><button class="tog" id="theme" type="button">Light</button></nav></div></header>
+<main class="wrap">
+  <section class="hero">
+    <div>
+      <p class="avail">Open for paid work and collabs</p>
+      <h1>GALD</h1>
+      <p class="sub">Growth <b>·</b> Video <b>·</b> Community</p>
+      <div class="obj"><small>// objective_</small>Visibility, then a room that stays. The video explains the product. The thread keeps it.</div>
+      <div class="row"><a class="btn fill" href="https://x.com/Just_Gald" target="_blank" rel="noopener">DM on X</a><a class="btn" href="https://t.me/biggald" target="_blank" rel="noopener">Telegram</a></div>
+    </div>
+    <div class="portrait"><img src="assets/avatar.jpg" alt="Gald" /><div class="chips"><span class="chip">@Just_Gald</span><span class="chip">5.8K on X</span><span class="chip">AI video</span></div></div>
+  </section>
+  <section>
+    <p class="kicker">// about_</p><h2>Who I am</h2>
+    <p class="lead">Web3 growth strategist and KOL. Educational and promotional posts, Telegram rooms, contests, KOL seats, and AI videos that explain the build.</p>
+    <p class="lead">Open for paid marketing, community roles, content, video, and long campaigns.</p>
+    <div class="stats"><div class="stat"><strong>5.8K</strong><span>X followers</span></div><div class="stat"><strong>221</strong><span>Likes on Note Systems</span></div><div class="stat"><strong>7</strong><span>Videos on the page</span></div></div>
+  </section>
+  <section>
+    <p class="kicker">// what you are hiring_</p><h2>What I offer</h2>
+    <div class="grid3">
+      <article class="card"><h3>Growth</h3><p>X content, engagement, and project promotion. The post that gets read.</p></article>
+      <article class="card"><h3>Community</h3><p>Telegram management, contests, quizzes, and ambassador recruitment.</p></article>
+      <article class="card"><h3>Video</h3><p>AI explainers for launches and announcements. The product, in a minute.</p></article>
+    </div>
+  </section>
+  <section id="work">
+    <p class="kicker">// proof_</p><h2>Selected work</h2>
+    <div class="grid2">
+      <article class="work"><p class="kicker">NOTE SYSTEMS · 221 LIKES</p><h3>Coupon and Shield, on video</h3><p>Structured notes, explained. 4.5K views, 174 replies, 27 reposts.</p><a href="https://x.com/Just_Gald/status/2103729956312301701" target="_blank" rel="noopener">Open the video →</a></article>
+      <article class="work"><p class="kicker">FUSI · 164 LIKES</p><h3>Create. Fuse. Trade.</h3><p>A market from the first block, not a bonding curve. 2.4K views.</p><a href="https://x.com/Just_Gald/status/2103223710870065569" target="_blank" rel="noopener">Open the video →</a></article>
+      <article class="work"><p class="kicker">GAMDOM · 134 LIKES</p><h3>The five-minute scroll</h3><p>Casino, sports, esports, one room. 2.4K views, 117 replies.</p><a href="https://x.com/Just_Gald/status/2101036209539571827" target="_blank" rel="noopener">Open the video →</a></article>
+      <article class="work"><p class="kicker">QUIP · 132 LIKES</p><h3>What the pot actually pays</h3><p>Win the match, take the pot minus 5%. A void refunds in full. 1.2K views.</p><a href="https://x.com/Just_Gald/status/2107170447922008160" target="_blank" rel="noopener">Open the video →</a></article>
+      <article class="work"><p class="kicker">MYTHICBOUND · 131 LIKES</p><h3>The Binding Road</h3><p>Six lands, no level cap. The project replied on the post. 2.3K views.</p><a href="https://x.com/Just_Gald/status/2106844306040623237" target="_blank" rel="noopener">Open the video →</a></article>
+      <article class="work"><p class="kicker">TSERA · 127 LIKES</p><h3>Where the money went</h3><p>Wallet noise, turned into a statement. 3.5K views.</p><a href="https://x.com/Just_Gald/status/2101721128448180518" target="_blank" rel="noopener">Open the video →</a></article>
+      <article class="work"><p class="kicker">HAMIEVERSE · 112 LIKES</p><h3>A doorway, then a choice</h3><p>Cinematic take on Genesis. 2.6K views.</p><a href="https://x.com/Just_Gald/status/2101407841026548136" target="_blank" rel="noopener">Open the video →</a></article>
+    </div>
+    <div class="quote">“Great post. Thanks for showcasing the Binding Road.”<small>MythicBound, on the video.</small></div>
+  </section>
+  <section class="hire" id="hire">
+    <p class="kicker">// let’s work_</p><h2>Open for paid work</h2>
+    <p class="lead">Marketing, community, content, or a video.</p>
+    <div class="row" style="justify-content:center"><a class="btn fill" href="https://x.com/Just_Gald">@Just_Gald</a><a class="btn" href="https://t.me/biggald">t.me/biggald</a></div>
+  </section>
+</main>
+<footer class="wrap"><span>GALD</span><span>@Just_Gald · t.me/biggald</span></footer>
+<script>const btn=document.getElementById("theme");btn.onclick=()=>{const l=document.body.dataset.theme==="light";document.body.dataset.theme=l?"":"light";btn.textContent=l?"Light":"Dark";};</script>
+</body>
+</html>
